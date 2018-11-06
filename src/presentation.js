@@ -1,5 +1,5 @@
 import React from 'react';
-import { Deck, Heading, Slide, Text } from 'spectacle';
+import { Deck, Heading, Slide, Text, List, ListItem, Appear } from 'spectacle';
 import createTheme from 'spectacle/lib/themes/default';
 
 import { colours, fontFamilies } from './theme';
@@ -15,14 +15,37 @@ const Presentation = () => (
     theme={theme}
     progress="bar"
   >
-    <Slide transition={['zoom']} bgColor="primary">
-      <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-        {' '}
-        Spectacle Boilerplate
+    <Slide transition={['slide']} bgColor="primary">
+      <Heading size={4} textAlign="left" textColor="secondary" caps>
+        Situational Questions
       </Heading>
-      <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-        open the presentation/index.js file to get started
+      <Text margin="10px 0 0" textAlign="left" textColor="secondary">
+        Igor Barsi
       </Text>
+    </Slide>
+    <Slide transition={['slide']} bgColor="secondary">
+      <Heading size={5} textAlign="left" textColor="primary">
+        What is a situational question?
+      </Heading>
+      <List>
+        <Appear>
+          <ListItem>
+            <Text>
+              Specific questions regarding events that may happen on the job
+            </Text>
+          </ListItem>
+        </Appear>
+        <Appear>
+          <ListItem>
+            <Text>Non-technical</Text>
+          </ListItem>
+        </Appear>
+        <Appear>
+          <ListItem>
+            <Text>Assess the candidate's behaviour</Text>
+          </ListItem>
+        </Appear>
+      </List>
     </Slide>
   </Deck>
 );
