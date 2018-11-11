@@ -38,9 +38,11 @@ export default (
           Require detailed recall of past experiences
         </AppearingListItem>
         <AppearingListItem>
-          Call for you to share telling stories on the spot
+          Call on you to share telling stories on the spot
         </AppearingListItem>
-        <AppearingListItem>You don’t know what to expect</AppearingListItem>
+        <AppearingListItem bold>
+          You don’t know what to expect
+        </AppearingListItem>
       </PlainList>
     </Slide>
   </SlideSet>

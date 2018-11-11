@@ -42,10 +42,6 @@ export default (
         <Fill>
           <PlainList>
             <ListItemText size={3}>
-              Describe a decision you made that was unpopular and how you
-              handled implementing it.
-            </ListItemText>
-            <ListItemText size={3}>
               Describe a time you were faced with a stressful situation. How did
               you handle it?
             </ListItemText>
@@ -55,6 +51,10 @@ export default (
             </ListItemText>
             <ListItemText size={3}>
               Have you handled a difficult situation with a co-worker? How?
+            </ListItemText>
+            <ListItemText size={3}>
+              Describe a decision you made that was unpopular and how you
+              implemented it.
             </ListItemText>
           </PlainList>
         </Fill>
@@ -101,10 +101,6 @@ export default (
             }}
           >
             <ListItemText size={3}>
-              Describe a decision you made that was unpopular and how you
-              handled implementing it.
-            </ListItemText>
-            <ListItemText size={3}>
               Describe a time you were faced with a stressful situation. How did
               you handle it?
             </ListItemText>
@@ -114,6 +110,10 @@ export default (
             </ListItemText>
             <ListItemText size={3}>
               Have you handled a difficult situation with a co-worker? How?
+            </ListItemText>
+            <ListItemText size={3}>
+              Describe a decision you made that was unpopular and how you
+              implemented it.
             </ListItemText>
           </PlainList>
         </Fill>
