@@ -20,7 +20,7 @@ const Presentation = () => (
   >
     <Slide transition={['slide']} bgColor="primary">
       <Heading size={4} textAlign="left" textColor="secondary" caps>
-        Situational Questions
+        Behavioural Questions
       </Heading>
       <Text margin="10px 0 0" textAlign="left" textColor="secondary">
         Igor Barsi

@@ -18,12 +18,14 @@ export default (
     </Slide>
     <Slide transition={['slide']} bgColor="secondary">
       <Heading size={5} textAlign="left" textColor="primary">
-        What is a situational question?
+        What is a behavioural question?
       </Heading>
       <List>
         <Appear>
           <ListItem>
-            <Text>Specific, regarding events that may happen on the job</Text>
+            <Text>
+              Specific past examples regarding events that may happen on the job
+            </Text>
           </ListItem>
         </Appear>
         <Appear>
@@ -40,7 +42,7 @@ export default (
     </Slide>
     <Slide transition={['slide']} bgColor="secondary">
       <Heading size={5} textAlign="left" textColor="primary">
-        Why are situational questions challenging?
+        Why are behavioural questions challenging?
       </Heading>
       <List>
         <Appear>

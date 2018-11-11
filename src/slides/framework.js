@@ -27,7 +27,7 @@ export default (
     </Slide>
     <Slide transition={['slide']} bgColor="secondary">
       <Heading size={5} textAlign="left" textColor="primary">
-        Examples of situational questions
+        Examples of behavioural questions
       </Heading>
       <Layout>
         <Fill>

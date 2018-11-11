@@ -21,6 +21,7 @@ export const colours = {
   secondary: '#FFFFFF',
   tertiary: '#262626',
   grey: '#8A8D8F',
+  green: '#007509',
 };
 
 export const fontFamilies = {
