@@ -20,6 +20,7 @@ export const colours = {
   primary: '#D44527',
   secondary: '#FFFFFF',
   tertiary: '#262626',
+  quaternary: '#D44527',
   grey: '#8A8D8F',
   green: '#007509',
 };

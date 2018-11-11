@@ -11,21 +11,24 @@ import {
 
 export default (
   <SlideSet>
-    <Slide transition={['slide']} bgColor="primary">
+    <Slide
+      transition={['slide']}
+      bgColor="primary"
+      progressColor="secondary"
+      controlColor="secondary"
+    >
       <Heading size={4} textAlign="left" textColor="secondary" caps>
         Introduction
       </Heading>
     </Slide>
     <Slide transition={['slide']} bgColor="secondary">
       <Heading size={5} textAlign="left" textColor="primary">
-        What is a behavioural question?
+        What are behavioural questions?
       </Heading>
       <List>
         <Appear>
           <ListItem>
-            <Text>
-              Specific past examples regarding events that may happen on the job
-            </Text>
+            <Text>Focus on how you handled work situations in the past</Text>
           </ListItem>
         </Appear>
         <Appear>
@@ -35,7 +38,10 @@ export default (
         </Appear>
         <Appear>
           <ListItem>
-            <Text>Assess the candidate's behaviour</Text>
+            <Text>
+              Based on the premise that past behaviour is a strong predictor of
+              future success
+            </Text>
           </ListItem>
         </Appear>
       </List>
