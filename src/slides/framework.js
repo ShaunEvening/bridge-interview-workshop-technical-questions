@@ -1,25 +1,8 @@
 import React from 'react';
-import {
-  Slide,
-  Heading,
-  Layout,
-  Fill,
-  List,
-  ListItem,
-  Text,
-  SlideSet,
-  Appear,
-} from 'spectacle';
+import { Slide, Heading, Layout, Fill, Text, SlideSet } from 'spectacle';
 
 import { colours, typeScale } from '../theme';
-
-const ListItemText = ({ children, ...props }) => (
-  <ListItem style={{ display: 'block' }} padding="20px 0">
-    <Text textSize={25} {...props}>
-      {children}
-    </Text>
-  </ListItem>
-);
+import { ListItemText, PlainList, AppearingListItem } from '../utils';
 
 export default (
   <SlideSet>
@@ -39,41 +22,41 @@ export default (
       </Heading>
       <Layout>
         <Fill>
-          <List>
-            <ListItemText>
+          <PlainList>
+            <ListItemText size={3}>
               Give an example of a goal you reached and how you achieved it.
             </ListItemText>
-            <ListItemText>
+            <ListItemText size={3}>
               Give an example of how you’ve gone above and beyond the call of
               duty.
             </ListItemText>
-            <ListItemText>
+            <ListItemText size={3}>
               Tell me about how you worked effectively under pressure.
             </ListItemText>
-            <ListItemText>
+            <ListItemText size={3}>
               Describe a time when you made a suggestion to improve something on
               the project that you were working on.
             </ListItemText>
-          </List>
+          </PlainList>
         </Fill>
         <Fill>
-          <List>
-            <ListItemText>
+          <PlainList>
+            <ListItemText size={3}>
               Describe a decision you made that was unpopular and how you
               handled implementing it.
             </ListItemText>
-            <ListItemText>
+            <ListItemText size={3}>
               Describe a time you were faced with a stressful situation. How did
               you handle it?
             </ListItemText>
-            <ListItemText>
+            <ListItemText size={3}>
               Give an example of a time when you showed initiative to resolve an
               issue or to de-risk a potential situation.
             </ListItemText>
-            <ListItemText>
+            <ListItemText size={3}>
               Have you handled a difficult situation with a co-worker? How?
             </ListItemText>
-          </List>
+          </PlainList>
         </Fill>
       </Layout>
     </Slide>
@@ -83,56 +66,56 @@ export default (
           <Text textSize={typeScale[2]} textColor="green">
             Successful Projects
           </Text>
-          <List
+          <PlainList
             style={{
               border: `2px solid ${colours.green}`,
               margin: '20px 40px 0 0',
               padding: '0 20px',
             }}
           >
-            <ListItemText>
+            <ListItemText size={3}>
               Give an example of a goal you reached and how you achieved it.
             </ListItemText>
-            <ListItemText>
+            <ListItemText size={3}>
               Give an example of how you’ve gone above and beyond the call of
               duty.
             </ListItemText>
-            <ListItemText>
+            <ListItemText size={3}>
               Tell me about how you worked effectively under pressure.
             </ListItemText>
-            <ListItemText>
+            <ListItemText size={3}>
               Describe a time when you made a suggestion to improve something on
               the project that you were working on.
             </ListItemText>
-          </List>
+          </PlainList>
         </Fill>
         <Fill>
           <Text textSize={typeScale[2]} textColor="primary">
             Unsuccessful Projects
           </Text>
-          <List
+          <PlainList
             style={{
               border: `2px solid ${colours.primary}`,
               'margin-top': '20px',
               padding: '0 20px',
             }}
           >
-            <ListItemText>
+            <ListItemText size={3}>
               Describe a decision you made that was unpopular and how you
               handled implementing it.
             </ListItemText>
-            <ListItemText>
+            <ListItemText size={3}>
               Describe a time you were faced with a stressful situation. How did
               you handle it?
             </ListItemText>
-            <ListItemText>
+            <ListItemText size={3}>
               Give an example of a time when you showed initiative to resolve an
               issue or to de-risk a potential situation.
             </ListItemText>
-            <ListItemText>
+            <ListItemText size={3}>
               Have you handled a difficult situation with a co-worker? How?
             </ListItemText>
-          </List>
+          </PlainList>
         </Fill>
       </Layout>
     </Slide>
@@ -140,44 +123,18 @@ export default (
       <Heading size={5} textAlign="left" textColor="primary">
         How to prepare for behavioural questions?
       </Heading>
-      <List>
-        <Appear>
-          <ListItem style={{ display: 'block' }} padding="20px 0">
-            <Text textSize={typeScale[2]}>
-              Prepare a successful and an unsuccessful project
-            </Text>
-          </ListItem>
-        </Appear>
-        <Appear>
-          <ListItem style={{ display: 'block' }} padding="20px 0">
-            <Text textSize={typeScale[2]}>Be authentic</Text>
-          </ListItem>
-        </Appear>
-        <Appear>
-          <ListItem style={{ display: 'block' }} padding="20px 0">
-            <Text textSize={typeScale[2]}>Be specific</Text>
-          </ListItem>
-        </Appear>
-        <Appear>
-          <ListItem style={{ display: 'block' }} padding="20px 0">
-            <Text textSize={typeScale[2]}>
-              Take your time and don't forget to breathe
-            </Text>
-          </ListItem>
-        </Appear>
-        <Appear>
-          <ListItem style={{ display: 'block' }} padding="20px 0">
-            <Text textSize={typeScale[2]}>Avoid self-depracating language</Text>
-          </ListItem>
-        </Appear>
-        <Appear>
-          <ListItem style={{ display: 'block' }} padding="20px 0">
-            <Text textSize={typeScale[2]} bold>
-              Practice!
-            </Text>
-          </ListItem>
-        </Appear>
-      </List>
+      <PlainList>
+        <AppearingListItem>
+          Prepare a successful and an unsuccessful project
+        </AppearingListItem>
+        <AppearingListItem>Be authentic</AppearingListItem>
+        <AppearingListItem>Be specific</AppearingListItem>
+        <AppearingListItem>
+          Take your time and don't forget to breathe
+        </AppearingListItem>
+        <AppearingListItem>Avoid self-depracating language</AppearingListItem>
+        <AppearingListItem bold>Practice!</AppearingListItem>
+      </PlainList>
     </Slide>
   </SlideSet>
 );
