@@ -1,13 +1,6 @@
 import React from 'react';
-import { SlideSet, Slide, Heading, List, Appear, ListItem } from 'spectacle';
-
-const AppearingListItem = ({ children, ...props }) => (
-  <Appear>
-    <ListItem textColor="tertiary" padding="20px 0" {...props}>
-      {children}
-    </ListItem>
-  </Appear>
-);
+import { SlideSet, Slide, Heading } from 'spectacle';
+import { PlainList, AppearingListItem } from '../utils';
 
 export default (
   <SlideSet>
@@ -25,7 +18,7 @@ export default (
       <Heading size={5} textAlign="left" textColor="primary">
         What are behavioural questions?
       </Heading>
-      <List style={{ 'list-style': 'none' }}>
+      <PlainList>
         <AppearingListItem>
           Focus on how you handled work situations in the past
         </AppearingListItem>
@@ -34,13 +27,13 @@ export default (
           Based on the premise that past behaviour is a strong predictor of
           future success
         </AppearingListItem>
-      </List>
+      </PlainList>
     </Slide>
     <Slide transition={['slide']} bgColor="secondary">
       <Heading size={5} textAlign="left" textColor="primary">
         Why are behavioural questions challenging?
       </Heading>
-      <List style={{ 'list-style': 'none' }}>
+      <PlainList>
         <AppearingListItem>
           Require detailed recall of past experiences
         </AppearingListItem>
@@ -48,7 +41,7 @@ export default (
           Call for you to share telling stories on the spot
         </AppearingListItem>
         <AppearingListItem>You don’t know what to expect</AppearingListItem>
-      </List>
+      </PlainList>
     </Slide>
   </SlideSet>
 );
