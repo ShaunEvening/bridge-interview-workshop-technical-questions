@@ -1,5 +1,6 @@
 import React from 'react';
-import { SlideSet, Slide, Heading, List, ListItem, Text } from 'spectacle';
+import { SlideSet, Slide, Heading, List } from 'spectacle';
+import { ListItemText } from '../utils';
 
 export default (
   <SlideSet>
@@ -18,18 +19,14 @@ export default (
         Time to practice!
       </Heading>
       <List ordered>
-        <ListItem>
-          <Text>Take a moment to reflect on a successful past project</Text>
-        </ListItem>
-        <ListItem>
-          <Text>Get into groups of 6</Text>
-        </ListItem>
-        <ListItem>
-          <Text>
-            Take turns describing your past project and the role you played in
-            making it a success
-          </Text>
-        </ListItem>
+        <ListItemText>
+          Take a moment to reflect on a successful past project
+        </ListItemText>
+        <ListItemText>Get into groups of 6</ListItemText>
+        <ListItemText>
+          Take turns describing your past project and the role you played in
+          making it a success
+        </ListItemText>
       </List>
     </Slide>
   </SlideSet>
