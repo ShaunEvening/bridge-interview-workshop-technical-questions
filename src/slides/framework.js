@@ -129,6 +129,7 @@ export default (
         </AppearingListItem>
         <AppearingListItem>Be authentic</AppearingListItem>
         <AppearingListItem>Be specific</AppearingListItem>
+        <AppearingListItem>"Me", not "we"</AppearingListItem>
         <AppearingListItem>
           Take your time and don't forget to breathe
         </AppearingListItem>

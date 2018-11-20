@@ -20,7 +20,7 @@ export default (
       </Heading>
       <PlainList>
         <AppearingListItem>
-          Focus on how you handled work situations in the past
+          Focus on how you handled project-based situations in the past
         </AppearingListItem>
         <AppearingListItem>Non-technical</AppearingListItem>
         <AppearingListItem>
